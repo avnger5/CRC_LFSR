@@ -22,7 +22,7 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module CRC_test;
+module CRC_4_level_pipeline_test;
 
 	// Inputs
 	reg clk;
@@ -34,7 +34,7 @@ module CRC_test;
 	//wire [8:0] out;
 
 	// Instantiate the Unit Under Test (UUT)
-	CRC_4_level uut (
+	CRC_4_level_pipeline uut (
 		.clk(clk), 
 		.reset(reset), 
 		.data_in(data_in), 
