@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module crc_2_level(clk,reset,data_in,data_out);
+module crc_2_level_pipeline(clk,reset,data_in,data_out);
 
 input clk,reset;
 input [9:0] data_in ;
