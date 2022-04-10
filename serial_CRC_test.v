@@ -24,7 +24,7 @@
 
 ///SERIAL CRC WORKING
 
-module crc_test;
+module serial_CRC_test;
 
 	// Inputs
 	reg clk;
