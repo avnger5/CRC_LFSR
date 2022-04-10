@@ -37,7 +37,7 @@ module crc_test;
 
 
 	// Instantiate the Unit Under Test (UUT)
-	CRC_serial uut (
+	serial_CRC uut (
 		.clk(clk), 
 		.reset(reset), 
 		.data_in(data_in), 
