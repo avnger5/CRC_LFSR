@@ -44,22 +44,14 @@ module Serial_CRC_eq2_test;
 		// Initialize Inputs
 		clk = 0;
 		reset = 1;
-		//data_in = 10'b101011;
-		data_in = 10'b111001;
-		#10
+		data_in = 10'b101011;
+		//data_in = 10'b111111;
+		#1
 		reset = 0;
-	
-		
-		#10
-		reset = 0;
-		
-		#100;
-        
-		// Add stimulus here
 
 	end
       
-		always #10 clk = ~clk;
+		always #1 clk = ~clk;
       
 endmodule
 
