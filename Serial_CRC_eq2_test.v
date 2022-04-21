@@ -44,8 +44,8 @@ module Serial_CRC_eq2_test;
 		// Initialize Inputs
 		clk = 0;
 		reset = 1;
-		data_in = 10'b101011;
-		//data_in = 10'b111111;
+		data_in = 6'b101011;
+		//data_in = 6'b111111;
 		#1
 		reset = 0;
 
