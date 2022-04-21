@@ -44,23 +44,21 @@ module CRC_unfold2_eq2_test;
 		// Initialize Inputs
 		clk = 0;
 		reset = 1;
-		//data_in = 10'b101011;
-		data_in = 10'b111111;
+		data_in = 10'b101011;
+		//data_in = 10'b111111;
 		
-		#10
+		#1
 		reset = 0;
 	
 		
-		#10
+		#1
 		reset = 0;
 		
-		#100;
-        
-		// Add stimulus here
+	
 
 	end
       
-		always #10 clk = ~clk;
+		always #1 clk = ~clk;
       
 endmodule
 
