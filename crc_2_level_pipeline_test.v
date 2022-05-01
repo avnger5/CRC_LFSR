@@ -47,20 +47,17 @@ module crc_2_level_pipeline_test;
 		reset = 1;
 		data_in = 10'b1100000011;
 		
-		#10
+		#1
 		reset = 0;
 	
 		
-		#10
-		reset = 0;
-		
-		#100;
+
         
 		// Add stimulus here
 
 	end
       
-		always #10 clk = ~clk;
+		always #1 clk = ~clk;
       
 endmodule
 
