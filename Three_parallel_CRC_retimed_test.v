@@ -22,6 +22,8 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
+//Verilog testbench code for generator polynomial 1+y+y8+y9 with 3 level unfolding and retimed
+
 module Three_parallel_CRC_retimed_test;
 
 	// Inputs
@@ -44,12 +46,14 @@ module Three_parallel_CRC_retimed_test;
 		
 		clk = 0;
 		reset = 1;
-		data_in = 10'b1100000011;
-		//data_in = 9'b101011010;
+		//data_in = 10'b1100000011;
+		data_in = 9'b101011010;
 		//data_in = 10'b1011001011;
 		#1
 		reset = 0;
 	
+		
+
 
 	end
       
