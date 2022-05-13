@@ -18,6 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+//Verilog code for generator polynomial 1+y+y8+y9 with 4 level pipeline
+//Serial CRC circuit 
+
 module CRC_4_level_pipeline(clk,reset,data_in,data_out);
 
 input clk,reset;
@@ -68,47 +72,17 @@ else
 		////////////////////////////////
 
 		
-		/*  ////////////////////////////////////////////////CODE for 1+y+y7+y9
-		data_out[0] <= data_reg[9];
-		data_out[1] <= data_out[0]^data_reg[9];
-		data_out[2] <= data_out[1];
-		data_out[3] <= data_out[2];
-		data_out[4] <= data_out[3];
-		data_out[5] <= data_out[4];
-		data_out[6] <= data_out[5];
-		d20 <= data_out[4]^data_out[6]^d11^data_reg[9];
-		d21 <= d20;
-		data_out[7] <= d21;
-		data_out[8] <= data_out[7];
-		d10 <= data_reg[9]^data_out[8];
-		d11 <= d10;
-		
-		/////////////////////////////////////////////////////CODE for 1+y+y7+y9
-		d10 <= data_reg[9];
-		d11 <= d10;
-		data_out[0] <= d11^data_out[8];
-		data_out[1] <= d11^data_out[8]^data_out[0];
-		data_out[2] <= data_out[1];
-		data_out[3] <= data_out[2];
-		data_out[4] <= data_out[3];
-		data_out[5] <= data_out[4];
-		data_out[6] <= data_out[5];
-		data_out[7] <= d21;
-		data_out[8] <= data_out[7];
-		d20 <= data_out[4]^data_out[6]^data_reg[9]^d11^data_out[8];
-		d21 <= d20;
-		*/
+	
 		
 		//data_reg <= data_reg<<1;
 		data_reg <= {data_reg[8:0],data_reg[9]};
-		
+		$display($time," output = %b ",data_out);
 		//out <= {data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]};
-		$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
+		//$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
 
 		
 	end
-	//out <= ~data_out;
-	//$display("2  out = %b ",out);
+
 end
 
 endmodule
