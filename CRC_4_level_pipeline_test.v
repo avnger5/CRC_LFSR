@@ -22,7 +22,10 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module CRC_4_level_pipeline_test;
+//Verilog testbench code for generator polynomial 1+y+y8+y9 with 4 level pipeline
+//Serial CRC circuit 
+
+module CRC_test;
 
 	// Inputs
 	reg clk;
@@ -46,10 +49,14 @@ module CRC_4_level_pipeline_test;
 		clk = 0;
 		reset = 1;
 		data_in = 10'b1100000011;
-		
+		//data_in = 10'b1010010101;
 		#1
 		reset = 0;
-
+	
+		
+	
+        
+		// Add stimulus here
 
 	end
       
