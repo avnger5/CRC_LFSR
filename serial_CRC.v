@@ -19,6 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
+//Verilog code for generator polynomial 1+y+y8+y9
+//Serial CRC circuit 
+
 module serial_CRC(clk,reset,data_in,data_out);
 
 input clk,reset;
