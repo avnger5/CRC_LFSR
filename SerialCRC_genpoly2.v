@@ -18,6 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+//Verilog  code for generator polynomial 1+y+y7+y9
+
+
 module SerialCRC_genpoly2(clk,reset,data_in,data_out);
 
 input clk,reset;
