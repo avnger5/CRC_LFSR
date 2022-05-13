@@ -23,6 +23,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 ///SERIAL CRC WORKING
+//Verilog test bench code for generator polynomial 1+y+y8+y9
+//Serial CRC circuit 
 
 module serial_CRC_test;
 
