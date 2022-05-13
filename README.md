@@ -5,32 +5,40 @@ CODES
 
 /////////////////////////////////
 Generator polynomial 1+y+y^8+y^9
+/////////////////////////////////
 
 /////////////////////Serial CRC implementation////////////////////////////////////////////
+
 serial_CRC.v
 serial_CRC_test.v
 
 ////////////////////CRC implementation with 2 level pipelining////////////////////////////
+
 crc_2_level_pipeline.v
 crc_2_level_pipeline_test.v
 
 ////////////////////CRC implementation with 4 level pipelining and retimimg////////////////
+
 CRC_4_level_pipeline.v
 CRC_4_level_pipeline_test.v
 
 ////////////////////CRC implementation with 3 level unfolding////////////////////////////
+
 Three_parallel_CRC.v
 Three_parallel_CRC_test.v
 
 ////////////////////CRC implementation with 3 level unfolding and retimimg////////////////
+
 Three_parallel_CRC_retimed.v
 Three_parallel_CRC_retimed_test.v
 
 
 /////////////////////////////////
 Generator polynomial 1+y+y^7+y^9
+/////////////////////////////////
 
 /////////////////////Serial CRC implementation////////////////////////////////////////////
+
 SerialCRC_genpoly2.v
 SerialCRC_genpoly2_test.v
 
@@ -40,17 +48,21 @@ SerialCRC_genpoly2_test.v
 
 /////////////////////////////////
 Generator polynomial 1+y+y^3+y^5
+/////////////////////////////////
 
 
 /////////////////////Serial CRC implementation////////////////////////////////////////////
+
 Serial_CRC_eq2.v
 Serial_CRC_eq2_test.v
 
 /////////////////////CRC implementation with 2 level unfolding////////////////////////////
+
 CRC_Unfold2_eq2.v
 CRC_Unfold2_eq2_test.v
 
 /////////////////////CRC implementation with 3 level unfolding////////////////////////////
+
 CRC_unfold3_eq2.v
 CRC_unfold3_eq2_test.v
 
