@@ -18,6 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+//Verilog code for generator polynomial 1+y+y8+y9 with 3 level unfolding and retimed
+
 module Three_parallel_CRC_retimed(clk,reset,data_in,data_out);
 
 input clk,reset;
