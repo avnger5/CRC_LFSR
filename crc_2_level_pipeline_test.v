@@ -22,6 +22,9 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
+//Verilog test bench code for generator polynomial 1+y+y8+y9 with 2 level pipelining
+//Serial CRC circuit with 2 level pipelining
+
 module crc_2_level_pipeline_test;
 
 	// Inputs
