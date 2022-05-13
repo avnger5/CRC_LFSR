@@ -20,14 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 //Verilog code for generator polynomial 1+y+y8+y9 with 3 level unfolding
-
+ 
 
 module Three_parallel_CRC(clk,reset,data_in,data_out);
 
 input clk,reset;
 input [8:0] data_in ;
 output reg [8:0] data_out;
-reg [9:0] data_reg;
+reg [8:0] data_reg;
 reg d1,d2,d3,d4,d5,d6,d7,d8,d9;
 
 always @(posedge clk or posedge reset)
@@ -75,9 +75,9 @@ else
 
 		//101011010
 		data_reg <= data_reg<<3;
-		//data_reg <= {data_reg[6:0],data_reg[9],data_reg[8],data_reg[7]};				
-		$display($time," output = %b ",data_out);
-		//$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
+		//data_reg <= {data_reg[5:0],data_reg[8],data_reg[7],data_reg[6]};				
+		//$display($time," output = %b ",data_out);
+		$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
 		
 	end
 	//out <= ~data_out;
