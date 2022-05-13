@@ -82,3 +82,9 @@ STEPS TO RUN THE CODE
 
 
 
+HELP
+The codes are given as follows:
+verilog_code_name.v
+verilog_testbench.v
+
+
