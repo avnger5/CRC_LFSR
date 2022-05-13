@@ -18,6 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+//Verilog code for generator polynomial 1+y+y3+y5
+
+
 module Serial_CRC_eq2(clk,reset,data_in,data_out);
 
 input clk,reset;
