@@ -22,6 +22,9 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
+//Verilog testbench code for generator polynomial 1+y+y7+y9
+//Serial CRC circuit 
+
 module SerialCRC_eq2_test;
 
 	// Inputs
