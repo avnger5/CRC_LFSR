@@ -18,6 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+//Verilog code for generator polynomial 1+y+y8+y9 with 2 level pipelining
+//Serial CRC circuit 2 level pipelining
+
+
 module crc_2_level_pipeline(clk,reset,data_in,data_out);
 
 input clk,reset;
@@ -55,9 +60,10 @@ else
 		//data_reg <= data_reg<<1;
 		data_reg <= {data_reg[8:0],data_reg[9]};
 		
+		$display($time," output = %b ",data_out);
 		//out <= {data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]};
 		
-		$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
+		//$display($time," output = %b%b%b%b%b%b%b%b%b ",data_out[0],data_out[1],data_out[2],data_out[3],data_out[4],data_out[5],data_out[6],data_out[7],data_out[8]);
 		
 	end
 	//out <= ~data_out;
