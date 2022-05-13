@@ -18,6 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+
+//Verilog code for generator polynomial 1+y+y3+y5 with 3 level unfolding
+
+
 module CRC_unfold3_eq2(clk,reset,data_in,data_out);
 
 input clk,reset;
